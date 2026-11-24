@@ -1,0 +1,22 @@
+[project]
+name = "fastapi-practice-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Hamzabaloch", email = "hb.developer08@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.165.0",
+]
+
+[project.scripts]
+fastapi-practice-project = "fastapi_practice_project:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.fastapi]
+entrypoint = "fastapi_practice_project.main:app"
